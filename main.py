@@ -23,3 +23,9 @@ st.title("Diary Tone")
 st.subheader("Positivity")
 pos_figure = px.line(x=dates, y=positivity,
                      labels={"x": "Date", "y": "Positivity"})
+st.plotly_chart(pos_figure)
+
+st.subheader("Negativity")
+neg_figure = px.line(x=dates, y=negativity,
+                     labels={"x": "Date", "y": "Negativity"})
+st.plotly_chart(neg_figure)
