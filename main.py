@@ -13,3 +13,6 @@ positivity = []
 for filepath in filepaths:
     with open(filepath) as file:
         content = file.read()
+        scores = analyzer.polarity_scores(content)
+        positivity.append(scores["pos"])
+        negativity.append(scores["neg"])
