@@ -16,3 +16,5 @@ for filepath in filepaths:
         scores = analyzer.polarity_scores(content)
         positivity.append(scores["pos"])
         negativity.append(scores["neg"])
+
+dates = [name.strip(".txt").strip("diary/") for name in filepaths]
