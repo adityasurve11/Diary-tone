@@ -11,3 +11,5 @@ analyzer = SentimentIntensityAnalyzer()
 negativity = []
 positivity = []
 for filepath in filepaths:
+    with open(filepath) as file:
+        content = file.read()
