@@ -18,3 +18,6 @@ for filepath in filepaths:
         negativity.append(scores["neg"])
 
 dates = [name.strip(".txt").strip("diary/") for name in filepaths]
+
+st.title("Diary Tone")
+st.subheader("Positivity")
