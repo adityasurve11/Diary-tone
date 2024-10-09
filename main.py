@@ -5,3 +5,5 @@ import plotly.express as px
 from nltk.sentiment import SentimentIntensityAnalyzer
 
 filepaths = sorted(glob.glob("diary/*.txt"))
+
+analyzer = SentimentIntensityAnalyzer()
