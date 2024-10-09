@@ -21,3 +21,5 @@ dates = [name.strip(".txt").strip("diary/") for name in filepaths]
 
 st.title("Diary Tone")
 st.subheader("Positivity")
+pos_figure = px.line(x=dates, y=positivity,
+                     labels={"x": "Date", "y": "Positivity"})
