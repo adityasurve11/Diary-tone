@@ -7,3 +7,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 filepaths = sorted(glob.glob("diary/*.txt"))
 
 analyzer = SentimentIntensityAnalyzer()
+
+negativity = []
+positivity = []
+for filepath in filepaths:
